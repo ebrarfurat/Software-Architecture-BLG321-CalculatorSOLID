@@ -7,12 +7,6 @@ public interface Calculator {
     double multiply(double a, double b);
     double divide(double a, double b);
 
-    double sqrt(double number);
-    double log(double number);
-    double sin(double number);
-    double cos(double number);
-
-    int and(int a, int b);
-    int or(int a, int b);
-    int xor(int a, int b);
+    //Tüm calculator'ların ortak kullanacağı hesaplama türlerini tek bir interface olarak oluşturdum.
+    //Bu hesaplama türlerini 3 hesap makinesinde de kullanılıyor, bu yüzden bu interface'i 3'ü de implement edecek.
 }

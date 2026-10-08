@@ -1,6 +1,6 @@
 package com.example.gitdemo.Calculate;
 
-public class ScientificCalculator implements Calculator {
+public class ScientificCalculator implements Calculator, ScientificOperations {
 
     @Override
     public double add(double a, double b) {
@@ -42,18 +42,4 @@ public class ScientificCalculator implements Calculator {
         return Math.cos(number);
     }
 
-    @Override
-    public int and(int a, int b) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public int or(int a, int b) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public int xor(int a, int b) {
-        throw new UnsupportedOperationException();
-    }
 }
